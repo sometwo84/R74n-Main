@@ -1,0 +1,16 @@
+elements.invisible_block = {
+	color: "#000000",
+	behavior: behaviors.WALL,
+	category: "solids",
+	state: "solid",
+ burnInto: "ruins",
+ burn:100,
+ burnTime:30,
+breakInto:"invisible_powder"}
+elements.invisible_powder = {
+color: "#000000",
+behavior: behaviors.POWDER,
+	category: "powders",
+	state: "powder",
+ reactions: {
+ "glue": {elm1: "invisible_block", elem2: null}
